@@ -111,12 +111,22 @@ commands:
           path: doc/_build/test-results
       - store_artifacts:
           path: doc/_build/test-results
+          destination: test-results
       - store_artifacts:
           path: doc/_build/html
+          destination: dev
+      - store_artifacts:
+          path: doc/_build/html_stable
+          destination: stable
       - store_artifacts:
           path: coverage
       - store_artifacts:
           path: doc/log.txt
+      - persist_to_workspace:
+          root: doc/_build
+          paths:
+              - html
+              - html_stable
 
   save_to_cache:
     description: "Caches the downloaded packages & buit docs."
