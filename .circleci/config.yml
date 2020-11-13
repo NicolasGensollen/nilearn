@@ -141,6 +141,8 @@ commands:
           paths:
             - doc
 
+jobs:
+
   deploy:
     docker:
       - image: circleci/python:3.7
@@ -180,8 +182,6 @@ commands:
             echo "No deployment (build: ${CIRCLE_BRANCH}).";
           fi
 
-jobs:
-
   quick-build:
     docker:
       - image: circleci/python:3.7
@@ -203,7 +203,6 @@ jobs:
       - build_docs
       - store_results
       - save_to_cache
-      - deploy
 
   full-build:
     docker:
@@ -223,8 +222,6 @@ jobs:
       - install_dependencies
       - build_docs
       - store_results
-      - deploy
-
 
 workflows:
   version: 2
@@ -243,6 +240,15 @@ workflows:
               only:
                 - master
                 - test-circleci  # test branch to check if merges occur on master as expected.
+
+      - deploy:
+          requires:
+            - full-build
+          filters:
+            branches:
+              only:
+                - master
+                - test-circleci
 
   nightly:
     triggers:
