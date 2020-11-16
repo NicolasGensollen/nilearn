@@ -38,6 +38,14 @@ matrix:
            SCIKIT_LEARN_VERSION="*" MATPLOTLIB_VERSION="*" COVERAGE="true"
            JOBLIB_VERSION="0.12"
            LXML_VERSION="*"
+    - name: "ARM64 Python 3.6 latest package versions"
+      arch: arm64
+      os: linux
+      python: "3.6"
+      env: DISTRIB="travisci" PYTHON_VERSION="3.6"
+           NUMPY_VERSION="*" SCIPY_VERSION="*" PANDAS_VERSION="*"
+           SCIKIT_LEARN_VERSION="*" MATPLOTLIB_VERSION="*" COVERAGE="true"
+           JOBLIB_VERSION="0.12" LXML_VERSION="*"
     - name: "Python 3.6 latest package versions"
       python: "3.6"
       env: DISTRIB="travisci" PYTHON_VERSION="3.6"
