@@ -31,6 +31,9 @@ Enhancements
   colorbar of surface plots. The default format is scientific notation except for :func:`nilearn.plotting.plot_surf_roi`
   for which it is set as integers.
 
+- Descriptions of datasets retrieved with fetchers from :mod:`nilearn.datasets` are now python strings rather
+  than `bytes`. Therefore, decoding the descriptions is no longer necessary.
+
 .. _v0.7.0:
 
 0.7.0
