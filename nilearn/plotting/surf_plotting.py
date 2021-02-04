@@ -91,22 +91,18 @@ def plot_surf(surf_mesh, surf_map=None, *, bg_map=None,
                 A surface can be:
                     - a nilearn.surface.Surface
                     - a sequence (mesh, data) where:
-
                         - mesh can be:
                             - a nilearn.surface.Mesh
                             - a path to .gii or .gii.gz etc.
                             - a sequence of two numpy arrays,
                             the first containing vertex coordinates
                             and the second containing triangles.
-
                         - data can be:
                             - a path to .gii or .gii.gz etc.
                             - a numpy array with shape (n_vertices,)
                             or (n_time_points, n_vertices)
-
             - a surface mesh geometry (deprecated)
                 A Mesh can be:
-
                     - a file (valid formats are .gii or Freesurfer specific
                     files such as .orig, .pial, .sphere, .white, .inflated)
                     - a list of two Numpy arrays, the first containing the
@@ -461,19 +457,16 @@ def plot_surf_contours(surf_mesh, roi_map, *, axes=None, figure=None, levels=Non
                 A surface can be:
                     - a nilearn.surface.Surface
                     - a sequence (mesh, data) where:
-
                         - mesh can be:
                             - a nilearn.surface.Mesh
                             - a path to .gii or .gii.gz etc.
                             - a sequence of two numpy arrays,
                             the first containing vertex coordinates
                             and the second containing triangles.
-
                         - data can be:
                             - a path to .gii or .gii.gz etc.
                             - a numpy array with shape (n_vertices,)
                             or (n_time_points, n_vertices)
-
             - a surface mesh geometry (deprecated)
                 A Mesh can be:
                     - a file (valid formats are .gii or Freesurfer specific
@@ -629,19 +622,16 @@ def plot_surf_stat_map(surf_mesh, stat_map, *, bg_map=None,
                 A surface can be:
                     - a nilearn.surface.Surface
                     - a sequence (mesh, data) where:
-
                         - mesh can be:
                             - a nilearn.surface.Mesh
                             - a path to .gii or .gii.gz etc.
                             - a sequence of two numpy arrays,
                             the first containing vertex coordinates
                             and the second containing triangles.
-
                         - data can be:
                             - a path to .gii or .gii.gz etc.
                             - a numpy array with shape (n_vertices,)
                             or (n_time_points, n_vertices)
-
             - a surface mesh geometry (deprecated)
                 A Mesh can be:
                     - a file (valid formats are .gii or Freesurfer specific
@@ -1023,19 +1013,16 @@ def plot_surf_roi(surf_mesh, roi_map, *, bg_map=None,
                 A surface can be:
                     - a nilearn.surface.Surface
                     - a sequence (mesh, data) where:
-
                         - mesh can be:
                             - a nilearn.surface.Mesh
                             - a path to .gii or .gii.gz etc.
                             - a sequence of two numpy arrays,
                             the first containing vertex coordinates
                             and the second containing triangles.
-
                         - data can be:
                             - a path to .gii or .gii.gz etc.
                             - a numpy array with shape (n_vertices,)
                             or (n_time_points, n_vertices)
-
             - a surface mesh geometry (deprecated)
                 A Mesh can be:
                     - a file (valid formats are .gii or Freesurfer specific
