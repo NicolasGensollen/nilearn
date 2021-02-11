@@ -533,6 +533,17 @@ the :ref:`user guide <user_guide>` for more information and usage examples.
 
 .. No relevant user manual section yet.
 
+**Classes**:
+
+.. currentmodule:: nilearn.surface
+
+.. autosummary::
+   :toctree: generated/
+   :template: class.rst
+
+   Surface
+   Mesh
+
 **Functions**:
 
 .. currentmodule:: nilearn.surface
@@ -543,4 +554,7 @@ the :ref:`user guide <user_guide>` for more information and usage examples.
 
    load_surf_data
    load_surf_mesh
+   load_surface
    vol_to_surf
+   check_surface
+   check_mesh_and_data
