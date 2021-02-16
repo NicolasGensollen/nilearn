@@ -15,6 +15,11 @@ NEW
   Distribution Function in the same way as `nilearn.glm.Contrast.p_value`
   computes the p-value using the Survival Function.
 
+- Meshes and Surfaces are now represented by dedicated objects.
+
+- :func:`nilearn.surface.load_surface` was added to instanciate a surface object from a mesh
+  and texture data.
+
 Fixes
 -----
 
@@ -47,6 +52,13 @@ Enhancements
   on the images provided to `transform` and regress them out automatically. This behaviour is 
   controlled through the `high_variance_confounds` boolean parameter of these maskers which
   default to False.
+
+- :func:`nilearn.plotting.plot_surf` and deriving functions like :func:`nilearn.plotting.plot_surf_roi`
+  now take a unique Surface object instead of separate mesh and data. Previous usage with separate mesh and
+  data is now deprecated and will be removed in release 0.9.
+
+- :func:`nilearn.surface.vol_to_surf` return value will change from a texture array to a Surface object in
+  release 0.9. Using this function currently gives a deprecation message.
 
 .. _v0.7.0:
 
